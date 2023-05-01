@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
 <body>
-    <form action="/action_page.php">
-  <fieldset>
-     <h1> Formulaire d'inscription</h1>
-     <legend> <strong> Information personnel</strong></legend>
-     <label for="fname">Prenom</label>
-     <input type="text" id="fname" name="fname"><br><br>
-    
-     <label for="lname">Nom :</label>
-     <input type="text" id="lname" name="lname"><br><br>
-
-     <label for="email">Email :</label>
-     <input type="text" id="email" name="email"><br><br>
-
-     <label for="birthday">Naissance:</label>
-     <input type="text" id="birthday" name="birthday"><br><br>
-
-     <label for="fname">Naissance</label>
-       <option value="Senegal" selected="Senegal"> Senegal</option>
-        <option value="Mali"> Mali</option>
-        <option value="Mouritanie"> Mouritanie</option>
-        <option value="Gambie">Gambie </option>
-        <option value="Guinée"> Senegal</option>
-        <option value="Maroc"> Maroc</option>
-        </select>
-
-    </fieldset><br>
+<form method="post">
     <fieldset>
-        <legend> <strong>Choix modules :</strong></legend>
-        <input type="checkbox" id="dev" name="dev">
-        <label for="dev"> Developpement Web</label><br>
+        <legend>  <strong> Informations  personelles </strong> </legend><br>
+        <div>
+            <label for="fname"> Nom:</label>
+            <input type="text" name="fname" id="fname" placeholder="saisisez votre nom" size="25" maxlength="25" >
+        </div><br>
+        <div>
+            <label for="lname"> Prenom:</label>
+            <input type="text" name="lname" id="lname" placeholder="saisisez votre prénom" size="25" maxlength="25">
+        </div><br>
+        <div>
+            <label for="email"> Email:</label>
+            <input type="text" name="email" id="email" placeholder="saisisez votre email"> 
+        </div><br>
+        <div>
+            <label for="sexelabel"> Sexe:</label>
+            <select for="sex-select" id="sexelabel">
+                <option value="">Masculin</option>
+                <option value="">Feminin</option>
+            </select>
+            
+        </div><br>
 
-        <input type="checkbox" id="devops" name="devops">
-        <label for="devops"> Devops</label><br>
+        <div>
+            <label for="date">Date de Naissance</label>
+            <input type="date" name="date" placeholder="yyyy/mm/dd" size="25">
+        </div><br>
+        <div>
+            <label for="tel-label">Numero Tel: </label>
+            <input type="tel" name="tel_num" id="tel_label" placeholder="0221" size="25">
+        </div><br>
+        <div>
+            <label for="adresse"> Adresse Domicile: </label>
+            <input type="text" name="adresse" id="adresse" placeholder="Dakar-Mermoz Rue 22" size="25">
+        </div> <br>
+    </fieldset><br><br>
+    <fieldset>
+        <legend> <strong> Modules </strong> </legend><br><br>
+        <div>
+           <h2><label for="formation">Choix de la  Formation: </label> </h2> <br>
+            <select>
+                <option value="">AWS</option>
+                <option value="">Developpement Web</option>
+                <option value="">Base de donnée</option>
+                <option value="">Hackers</option>
+                <option value="">Reference Digital</option>
+            </select>
 
-        <input type="checkbox" id="marketing" name="marketing">
-        <label for="marketing"> Markting Digital</label><br>
+        </div><br> 
+        <div>
+            <label for="cv-label"> telecharger votre CV</label>
+            <input type="file" name="cvFile" id="cv-label"> <br> 
+        </div>
+        <div>
+            <input type="submit" name="btn-envoyer" value="Envoyer">
+            <input type="submit" name="btn-annuler" value="Annuler">
+   
+        </div>
+    
+    </fieldset>
 
-        <input type="checkbox" id="aws" name="aws">
-        <label for="aws"> Aws re/Start</label><br>
-    </fieldset><br>
-    <input type="submit" value="Ajouter">
-    <input type="reset" value="submit">
 </form>
  </body>
 </html>
