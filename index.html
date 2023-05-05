@@ -1,35 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <nav>
-        <ul style="list-style-type: style none;">
-            <li style="display: inline-block; padding: 10px 30px;">
-                <a href="acceuil.html"> Acceuil </a>
-            </li>
-            <li style="display: inline-block; padding: 20px 40px;">
-                <a href="formulaire.html"> Formulaire d'inscription </a>
-            </li>
-            <li style="display: inline-block; padding: 30px 50px;">
-                <a href="liste_apprenant.html"> Liste des apprenants </a> 
-            </li>
-            <li style="display: inline-block; padding: 10px 20px;">
-                <!--<a href="acceuil.html"> -->
-                    <img src="odc2.PNG" height="500" width="1000">
-                    
-                </a>
-             
-            </li>
-            
-            
-        </ul>
-        <ul>
-            
-        </ul>
+      <meta charset="utf-8">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/index.css">
 
-    </nav>
+    <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+          HTML5 fonctionne correctement avec les anciennes versions de
+          Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+ 
+ 
+  
 </head>
 <body>
+  <!-- Voici notre en‑tête principale utilisée dans toutes les pages
+          de notre site web -->
+  
+    <header>
+      <h1 > Bienvenu dans votre programme d'apprentissage</h1>
+    </header>
+  
+    <nav>
+      <ul>
+       
+        <li><a href="acceuil.html"> Acceuil </a> </li>
+        <!--<li style="display: inline-block; padding: 20px 40px;"> </li>-->
+        <li><a href="formulaire.html"> Formulaire d'inscription </a> </li>
+       <li> <a href="liste_apprenant.html"> Liste des apprenants </a> </li>
+        <li><a href="acceuil.html"> </a> </li>
+        <li style="float:right"><a class="active" href="#about">à propos</a></li>
+        
+          <form style="float:right">
+           <input type="search" name="q" placeholder="Rechercher">
+           <input type="submit" value="Lancer !">
+        </form>
+      
+      </ul>
+      
+    </nav>
 
+      <img src="odc2.PNG" height="200" width="600"><br>
     
+    
+    <!-- Ici nous mettons le contenu de la page -->
+    <div id="main">
+       <!-- Il contient un article -->
+       <div id="contenu" >
+         <h2>C'est quoi Sonatel Academy ?</h2>
+         <p>
+         
+          Sonatel Academy est la première école de codage gratuite créée par 
+          Sonatel pour contribuer à
+          l’employabilité des jeunes à travers les métiers du numérique.
+         </p>
+
+        <h3>Comment rejoindre l’aventure Sonatel Academy ?</h3>
+        <p> 
+          Un programme gratuit et accessible à tous pour se familiariser au monde
+           numérique, développer ses compétences 
+          ou se faire accompagner dans un parcours professionnel.
+        </p>
+        <p>
+         <ul>
+           <li>
+            Postulez en ligne pour le référentiel souhaité
+            Passez les tests
+            Passez les entretiens de sélections
+            Félicitations !! L'aventure Sonatel Academy commence pour vous...!
+          </li>
+         </ul>
+        </p>
+      </div> 
+
+      <div id="menu">
+        <h2>Nos Partenaires</h2>
+        <ul>
+          <li><a href="www.orange.sn">Orange</a></li>
+          <li><a href="sonatelacademy.sn"> Sonatel Academy</a></li>
+          <li><a href="www.aws.com"> AWS</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- Et voici notre pied de page utilisé sur toutes les pages du site -->
+    <div id="footer">
+      <p>©Copyright 2023 sonatel academy. Tous droits reversés.</p>
+    </div>   
 </body>
 </html>
