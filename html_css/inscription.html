@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+          <li><a href="liste.html">Liste</a></li>
+          <li><a href="details.html">A propos</a></li>
+          <li id="li5"><a href="connexion.html">Connexion</a></li>
+        </ul>
+      </nav>
+    <form action="">
+        <fieldset>
+            <legend><strong>Information personnelle:</strong>:</legend>
+            <label for="fname" >Prenom:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Nom:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Naissance:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+
+            <label for="fname">Nationalité:</label><select name="pays" id="">
+                <option value="Senegal" selected="selected">Senegal</option>
+                <option value="Mauritanie">Mauritanie</option>
+                <option value="France">France</option>
+                <option value="Canada">Canada</option>
+            </select>
+        </fieldset><br>
+
+        <fieldset>
+            <legend> <strong>Choix Modules:</strong></legend>
+            <input type="checkbox" id="dev" name="dev">
+            <label for="dev">Developpement Web</label><br>
+            <input type="checkbox" id="devops" name="devops">
+            <label for="devops">Devops</label><br>
+            <input type="checkbox" id="marketing" name="marketing">
+            <label for="marketing">Marketing Digital</label><br>
+            <input type="checkbox" id="aws" name="aws">
+            <label for="aws">AWS re/Star</label><br><br>
+        </fieldset><br>    
+        <input type="submit" value="Ajouter">
+        <input type="reset" value="Annuler">
+    </form><br><br>
+
+    <footer>
+        <div class="inner-footer">
+         <div class="social-links">
+           <ul>
+               <li class="social-items"><a href="#"><i class="fab fa-facebook"></i></a></li>
+               <li class="social-items"><a href="#"><i class="fab fa-twitter"></i></a></li>
+               <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
+               <li class="social-items"><a href="#"><i class="fab fa-tumblr-square"></i></a></li>          
+           </ul>
+         </div>
+         <div class="quick-links">
+           <ul>
+             <li class="quick-items"><a href="#">Home</a></li>
+             <li class="quick-items"><a href="#">Tutorials</a></li>
+             <li class="quick-items"><a href="#">Services</a></li>
+             <li class="quick-items"><a href="#">About Us</a></li>
+             <li class="quick-items"><a href="#">Contact Us</a></li>
+           </ul>
+         </div>
+        </div>
+        <div class="outer-footer">
+         Copyright &copy; web coding Pro. All Rights Reserved 
+        </div>
+       </footer>    
+</body>
+</html>

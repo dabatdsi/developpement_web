@@ -1,0 +1,163 @@
+/* Ajout d'un fond gris clair */
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+  }
+  
+  /* Ajout de marges pour centrer le formulaire */
+  form {
+    margin: 0 auto;
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Ajout de styles pour les labels */
+  label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+  }
+  label[for="marketing"] {
+    width: 140px;
+  }
+  
+  label[for="dev"] {
+     width: 240px;
+  }
+  
+ 
+  /* Ajout de styles pour les champs de texte */
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select {
+    padding: 5px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  /* Ajout de styles pour les boutons */
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  input[type="reset"] {
+    background-color: #de1515;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #3e8e41;
+  }
+  input[type="text"], input[type="email"], input[type="date"], select {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+  }
+    
+    /* Style pour la liste de navigation */
+      nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: solid 2px gold;
+    position: sticky;
+    top: 0;
+  }
+  #li5 {
+    position: absolute;
+    right: 0;
+  }
+  
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+ 
+  /* style pour le pied de page*/
+  .inner-footer{
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+  }
+  .social-links{
+    display: flex;
+  }
+  .social-links ul{
+    display: flex;
+    padding: 10px;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+  }
+.social-items{
+list-style: none;
+}
+.social-items a{
+  padding: 10px 20px;
+  font-size: 30px;
+  color: #6cccc6;
+  }
+  .social-items a:hover{
+    color: #54a39e;
+  }
+
+  .quick-links{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+  }
+  .quick-links ul{
+    display: flex;
+  }
+  .quick-items{
+    list-style: none;
+  }
+  .quick-items a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 18px;
+    color: white;
+  }
+  .quick-items a:hover{
+    color: #6cccc6;
+  }
+
+  .outer-footer{
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #3f3f3f;
+  }
